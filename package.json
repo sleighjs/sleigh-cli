@@ -1,0 +1,31 @@
+{
+  "name": "sleigh-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sleigh": "./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "clear": "0.0.1",
+    "clui": "^0.3.6",
+    "commander": "^2.11.0",
+    "figlet": "^1.2.0",
+    "github": "^9.2.0",
+    "inquirer": "^3.2.1",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "nodegit": "^0.18.3",
+    "pify": "^3.0.0",
+    "preferences": "^0.2.1",
+    "simple-git": "^1.74.1",
+    "touch": "^3.1.0"
+  }
+}
