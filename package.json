@@ -1,16 +1,15 @@
 {
   "name": "sleigh-cli",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Sleigh command line tool to prepare your next sleigh app",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "sleigh": "./app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "CLI", "sleigh", "MVC Framework"
+  ],
+  "author": "Apostolos Siokas",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.0.1",

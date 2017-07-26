@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-var chalk       = require('chalk');
-var clear       = require('clear');
-var CLI         = require('clui');
-var figlet      = require('figlet');
-var inquirer    = require('inquirer');
+var chalk = require('chalk');
+var clear = require('clear');
+var CLI = require('clui');
+var figlet = require('figlet');
+var inquirer = require('inquirer');
 var Preferences = require('preferences');
-var Spinner     = CLI.Spinner;
-var _           = require('lodash');
-var touch       = require('touch');
-var fs          = require('fs');
+var Spinner = CLI.Spinner;
+var _ = require('lodash');
+var touch = require('touch');
+var fs = require('fs');
 var Git = require('nodegit');
 var files = require('./src/lib/files');
 var program = require('commander');
@@ -19,12 +19,16 @@ var Line = CLI.Line;
 
 clear();
 console.log(
-  chalk.red(
-    figlet.textSync('Sleigh Js', { horizontalLayout: 'full' })
-  )
+    chalk.red(
+        figlet.textSync('Sleigh Js', {
+            horizontalLayout: 'full'
+        })
+    )
 );
 console.log();
-console.log('-------------------------------------------------------');
+console.log('--------------------------------------------------------');
+console.log('Sleigh command line tool to prepare your next sleigh app');
+console.log('--------------------------------------------------------');
 console.log();
 
 program
@@ -37,7 +41,7 @@ program
 
 program.parse(process.argv);
 
-function newApp(name){
+function newApp(name) {
     var status = new Spinner('Cloning repository...');
     status.start();
 
@@ -51,4 +55,3 @@ function newApp(name){
         console.log('4. npm run serve');
     });
 }
-
