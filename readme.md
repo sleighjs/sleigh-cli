@@ -14,7 +14,33 @@ To install sleigh command line tool globaly, you should run the following comman
 npm install -g sleigh-cli
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Now you can use the sleigh command from your terminal. To scaffold a new sleigh app run the following command
+
+```
+sleigh new <name-of-the-app>
+```
+
+Next you should go into the app folder and follow the next steps
+
+**install the dependencies**
+```
+npm install
+```
+**create a .env file based on .env.example file**
+```
+.env.example .env
+```
+
+### Run
+
+To run your app just enter
+
+```
+npm run serve
+```
+
+__This command runs the app and also starts a demon that restarts your server whenever you change the code__
+
 
 ## Built With
 
@@ -23,7 +49,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/sleigh/sleigh-cli/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+All pull requests are welcome. Please do not hesitate to ask anything and create a pull request for anything.
 
 ## Authors
 
