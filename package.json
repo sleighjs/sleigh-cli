@@ -6,6 +6,10 @@
   "bin": {
     "sleigh": "./app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sleighjs/sleigh-cli.git"
+  },
   "keywords": [
     "CLI",
     "sleigh",
@@ -20,6 +24,7 @@
     "clui": "^0.3.6",
     "commander": "^2.16.0",
     "figlet": "^1.2.0",
+    "hoek": "^5.0.3",
     "inquirer": "^3.3.0",
     "lodash": "^4.17.10",
     "minimist": "^1.2.0",
